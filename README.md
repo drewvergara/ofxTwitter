@@ -22,4 +22,6 @@ drewvergara@gmail.com
 
 
 -------------------------------------------------------
+05-23-12: Added in a clear() function to remove listener and stop httpUtils
+
 05-04-12: Updated addon to fit most recent version of ofxHttpUtils

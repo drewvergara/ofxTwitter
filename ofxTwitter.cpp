@@ -107,3 +107,11 @@ void ofxTwitter::newResponse(ofxHttpResponse &response) {
 vector<Tweet> ofxTwitter::getLatestResponse() {
 	return data;
 }
+
+void ofxTwitter::clear() {
+	// listen to http events
+    ofRemoveListener(httpUtils.newResponseEvent, this, &ofxTwitter::newResponse);
+    httpUtils.stop();
+    
+//	data.clear();
+}

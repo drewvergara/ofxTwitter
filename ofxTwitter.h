@@ -35,6 +35,8 @@ public:
 	
 	vector<Tweet> getLatestResponse();
 	void newResponse(ofxHttpResponse &response);
+    
+    void clear();
 
 	ofxHttpUtils httpUtils;
     
